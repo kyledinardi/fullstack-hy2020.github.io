@@ -351,7 +351,7 @@ Unfortunately, startStandaloneServer does not allow adding subscriptions to the 
 Let us install Express
 
 ```bash
-npm install express cors
+npm install express@4 cors
 ```
 
 and the file <i>index.js</i> changes to:
@@ -464,7 +464,7 @@ The file <i>index.js</i> is changed to:
 ```js
 // highlight-start
 const { WebSocketServer } = require('ws')
-const { useServer } = require('graphql-ws/lib/use/ws')
+const { useServer } = require('graphql-ws/use/ws')
 // highlight-end
 
 // ...
